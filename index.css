@@ -1,0 +1,115 @@
+/* h3{
+    background-color: orange;
+}
+span{
+    background-color: aqua;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+h1{
+    color:red;
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 50px;
+    text-align: center;
+}
+
+h2{
+    color: orange;
+} */
+
+/* Selectors */
+/* Universal Selector - Applies to all 
+elements/tags */
+/* *{
+    color: violet;
+} */
+/* ID selector - 
+can be used by giving id attribute 
+and name to that id  (selected using #)*/
+#heading{
+    color: red;
+    background-color: orange;
+}
+/* Element Selector - 
+Used to access the element 
+by directly using the element name 
+
+*/
+h3{
+    font-size: 25px;
+}
+/* Class selector - 
+using class attribute we can select the element
+(selected using .)
+*/
+.anurag{
+    color: green;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.anuragimage{
+    height: 100px;
+    width: 100px;
+}
+.card-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.card-image{
+    height: 200px;
+    width: 200px;
+}
+.content{
+    color: aqua;
+    font-size: 30px;
+}
+
+#strategyId{
+    color: orange;
+}
+
+@media (max-width:768px){
+    .card-header{
+        flex-direction: column;
+    }
+    .card-image{
+        height: 100px;
+        width: 100px;
+    }
+    .content{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:500px) {
+    h4{
+        font-size: 40px;
+    }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    h4{
+        background-color: red;
+    }
+}
+
+@media (orientation:portrait){
+    body{
+        background: orange;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container-image{
+    width: 300px;
+    height: 300px;
+}
