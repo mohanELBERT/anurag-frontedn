@@ -5,21 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selectors</title>
     <style>
-      .heaidng,
+      /* .heaidng,
       .heading2 {
         color: rgb(135, 195, 62);
+      }
+      .div1{
+        border: 1px solid black;
+      }
+      .div1>p{
+        color: red;
+      } */
+
+      /* .parent h4 {
+        color: red;
+      }
+
+      .parent > b {
+        color: orange;
+      }
+
+      .heading:hover {
+        color: green;
+      }
+
+      .heading:first-child {
+        background-color: yellow;
+      }
+
+      .content::before{
+       content: "hfiebfi";
+      } */
+
+      .industries-container {
+        display: flex;
+        padding: 40px;
+        gap: 20px;
+      }
+
+      .industries-container > img {
+        height: 250px;
+        width: 300px;
+      }
+
+      .industries-content > h2 {
+        color: #009cd9;
+        font-size: 35px;
+      }
+      .industries-content > p {
+        color: #455a64;
+        width: 80%;
+      }
+      .loan-button {
+        color: white;
+        background-color: green;
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: none;
+      }
+      .expert-button {
+        color: white;
+        background-color: blue;
+        padding: 10px 15px;
+        border-radius: 20px;
+        border: none;
       }
     </style>
   </head>
   <body>
-    <h1 class="heaidng">This is for selectors</h1>
+    <!-- <h1 class="heaidng">This is for selectors</h1>
     <h4 class="heading2">
       We can use combination selectors to apply same styles for two different
       selectors
     </h4>
-    <p>This is a paragraph</p>
+    <p>This is a paragraph</p> -->
     <!-- Descendant selector, Child Selector, Pseudo Classes and Pseudo Elements-->
-     <!-- Positions in CSS -->
-      <div>hello</div>
+    <!-- Descendent Selector - Applies style for every descendent to the element  -->
+    <!-- Child Selector - Applies style to only childs for the element -->
+    <!-- Pseudo classes - Applying style based o the element state or position, uses : (eg - hover, first-child,nth-child()) -->
+    <!-- Pseudo elements -Applying style specific to that element, uses ::  (eg - first-letter, first-line, before, after)  -->
+    <!-- <div class="div1">
+      <div class="div2">
+        <div class="div3">This is 3</div>
+        <p>Hi there</p>
+        <h3>Hi this is h3</h3>
+      </div>
+      <div class="div3">This is 4</div>
+      <h3>Hi from h3</h3>
+      <h3>New h3</h3>
+      <p>This is p</p>
+    </div> -->
+
+    <!-- <div class="parent">
+      <div class="heading">This is p <b>tag</b></div>
+
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla
+        
+      </p>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla
+        
+      </p>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla
+        
+      </p>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla
+        
+      </p>
+    </div> -->
+    <div class="industries-container">
+      <img src="./image.png" alt="retail" />
+      <div class="industries-content">
+        <h2>Retail</h2>
+        <p>
+          At Elbert Technology, we're driving a digital revolution in the retail
+          industry. AI-powered analytics, augmented reality, and seamless
+          ecommerce experiences are transforming how customers shop and interact
+          with brands. Through personalized recommendations and frictionless
+          transactions, we're shaping a retail landscape that meets and exceeds
+          modern consumer expectations, creating a dynamic, tech-forward
+          shopping ecosystem.
+        </p>
+        <div>
+          <button class="loan-button">Apply for Loan</button>
+          <button class="expert-button">Ask Expert</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
