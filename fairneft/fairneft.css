@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.empower-container {
+    color: white;
+    background-image: url("./bgimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+}
+.empower-container>h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+.empower-content {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.empower-products>li{
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+/* .empower-products>li::before{
+    content: "✅ "; 
+} */
+
+.tickImage{
+    height: 15px;
+    width: 15px;
+}
+.empower-buttons>button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: rgb(89, 159, 89);
+    color: white;
+    border: none;
+    margin-right: 15px;
+}
+.empower-buttons{
+    margin-top: 20px;
+}
+
+#advisorButton{
+    background-color: rgb(143, 143, 213);
+}
+
+/* foooter styles */
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-logo{
+    width: 180px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-content>h4{
+    color: rgb(61, 99, 222);
+}
+
+/* Mediaqueries for top section */
+
+@media (max-width:720px){
+    .empower-container>h1{
+        width: 100%;
+    }
+    .empower-content{
+        width: 100%;
+    }
+}
+
+@media (max-width:530px){
+    .empower-container>h1{
+        font-size: 40px;
+    }
+}
