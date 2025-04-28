@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>DOM Manipulation in js</title>
+  </head>
+  <body>
+    <h1 id="count">0</h1>
+    <button id="decrement">-</button>
+    <button id="reset" onclick="reset()">reset</button>
+    <button id="increment" onclick="increment()">+</button>
+  </body>
+  <script>
+    let c = 0;
+    let countValue = document.getElementById("count");
+    let decrementButton = document.getElementById("decrement");
+
+    function color() {
+      if (c == 0) {
+        countValue.style.backgroundColor = "";
+      } else if (c % 2 != 0) {
+        countValue.style.backgroundColor = "green";
+      } else {
+        countValue.style.backgroundColor = "red";
+      }
+    }
+    decrementButton.addEventListener("click", function () {
+      c = c - 1;
+      countValue.innerText = c;
+      color();
+    });
+
+    function reset() {
+      c = 0;
+      countValue.innerText = c;
+      if (c == 0) {
+        countValue.style.backgroundColor = "";
+      }
+    }
+
+    function increment() {
+      c = c + 1;
+      countValue.innerText = c;
+      color();
+    }
+  </script>
+</html>
